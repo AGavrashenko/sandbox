@@ -3,9 +3,9 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass:compile', function () {
-    gulp.src('src/*.scss')
+    gulp.src('style/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('src/'));
+        .pipe(gulp.dest('style/'));
 });
 
 gulp.task('server:run', function () {
