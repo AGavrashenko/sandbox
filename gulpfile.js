@@ -13,7 +13,7 @@ gulp.task('server:run', function () {
         server: "./"
     });
 
-    gulp.watch('src/**/*.scss', function () {
+    gulp.watch('style/**/*.scss', function () {
         gulp.run('sass:compile');
     });
 

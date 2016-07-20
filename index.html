@@ -12,11 +12,35 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-<h1>Hello world</h1>
+<form>
+    <fieldset>
+        <label class="radio">
+            <input type="radio" name="radio-group-1">
+            <span class="radio__label">Radio1</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio-group-1" disabled>
+            <span class="radio__label">Radio2</span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio-group-1">
+            <span class="radio__label">Radio3</span>
+        </label>
 
-<label><input type="radio" name="radio-group-1"> radio1</label>
-<label><input type="radio" name="radio-group-1"> radio2</label>
-<label><input type="radio" name="radio-group-1"> radio3</label>
+        <hr>
+
+        <label class="radio radio_inline">
+            <input type="radio" name="radio-group-2">
+            <span class="radio__label">RadioInline1</span>
+        </label>
+        <label class="radio radio_inline">
+            <input type="radio" name="radio-group-2">
+            <span class="radio__label">RadioInline2</span>
+        </label>
+    </fieldset>
+</form>
+
+
 
 <br><br>
 

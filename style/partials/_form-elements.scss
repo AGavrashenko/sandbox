@@ -1,0 +1,53 @@
+$border-color: gray;
+$focus-outline-color: blue;
+
+.radio {
+  display: block;
+
+  &.radio_inline {
+    display: inline-block;
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    float: left;
+
+    &:focus ~ .radio__label:before {
+      box-shadow: 0 0 .1em $focus-outline-color;
+    }
+    &:checked ~ .radio__label:before {
+      border-width: .4em;
+    }
+    &:disabled ~ .radio__label:before {
+      opacity: .5;
+      cursor: not-allowed;
+      background: lighten($border-color, 40%);
+      border-color: $border-color !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .radio__label {
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: text-top;
+      width: 1em;
+      height: 1em;
+      margin-right: .25em;
+      border-radius: 50%;
+      background-color: #fff;
+      border: .1em solid $border-color;
+      transition: border .1s;
+    }
+  }
+
+  &:hover .radio__label:before {
+    cursor: pointer;
+    border-color: darken($border-color, 15%);
+    box-shadow: 0 0 .1em $focus-outline-color;
+  }
+}
