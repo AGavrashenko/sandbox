@@ -12,40 +12,52 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-<form>
-    <fieldset>
-        <label class="radio">
-            <input type="radio" name="radio-group-1">
-            <span class="radio__label">Radio1</span>
-        </label>
-        <label class="radio">
-            <input type="radio" name="radio-group-1" disabled>
-            <span class="radio__label">Radio2</span>
-        </label>
-        <label class="radio">
-            <input type="radio" name="radio-group-1">
-            <span class="radio__label">Radio3</span>
-        </label>
+<div class="main-width">
 
-        <hr>
+    <h3>Grid</h3>
+    <div class="row">
+        <div class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sequi.</div>
+        <div class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta error illo inventore laborum modi obcaecati quasi rem reprehenderit vel voluptatibus.</div>
+        <div class="col-4">Lorem ipsum dolor sit amet.</div>
+    </div>
 
-        <label class="radio radio_inline">
-            <input type="radio" name="radio-group-2">
-            <span class="radio__label">RadioInline1</span>
-        </label>
-        <label class="radio radio_inline">
-            <input type="radio" name="radio-group-2">
-            <span class="radio__label">RadioInline2</span>
-        </label>
-    </fieldset>
-</form>
+    <h3>Form elements</h3>
 
+    <form>
+        <fieldset>
+            <legend>Radiobuttons</legend>
 
+            <label class="radio">
+                <input type="radio" name="radio-group-1">
+                <span class="radio__label">Radio1</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio-group-1" disabled>
+                <span class="radio__label">Radio2</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio-group-1">
+                <span class="radio__label">Radio3</span>
+            </label>
 
-<br><br>
+            <hr>
 
-<label><input type="checkbox" name="checkbox-group-1"> checkbox1</label>
-<label><input type="checkbox" name="checkbox-group-1"> checkbox2</label>
-<label><input type="checkbox" name="checkbox-group-1"> checkbox3</label>
+            <label class="radio radio_inline">
+                <input type="radio" name="radio-group-2">
+                <span class="radio__label">RadioInline1</span>
+            </label>
+            <label class="radio radio_inline">
+                <input type="radio" name="radio-group-2">
+                <span class="radio__label">RadioInline2</span>
+            </label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Checkboxes</legend>
+        </fieldset>
+    </form>
+</div>
 </body>
 </html>

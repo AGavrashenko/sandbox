@@ -4,7 +4,7 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('sass:compile', function () {
     gulp.src('style/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError)) //outputStyle: [expanded, compact, compressed]
         .pipe(gulp.dest('style/'));
 });
 
