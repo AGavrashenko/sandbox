@@ -1,7 +1,7 @@
 //
 //## Headers
 //
-@mixin calc-header($font-size, $wrap, $font-weight: normal) {
+@mixin calc-header($font-size, $wrap) {
   $line-height: $font-size + 1;
   $baseline-from-bottom: 1rem;
 
@@ -12,7 +12,6 @@
 
   height: $wrap;
   font-size: $font-size;
-  font-weight: $font-weight;
   line-height: $line-height;
   padding-top: $wrap - $line-height - $bottom;
   padding-bottom: $bottom;
