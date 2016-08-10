@@ -1,0 +1,32 @@
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  @include calc-header($font-size: 1.75rem, $wrap: 4rem, $font-weight: normal);
+}
+
+h2 {
+  @include calc-header(1.3125rem, 4rem);
+}
+
+h3 {
+  @include calc-header(1.125rem, 4rem, 600);
+}
+
+h4 {
+  @include calc-header(1.125rem, 3rem);
+}
+
+h5 {
+  @include calc-header(1.2rem, 3rem, 600);
+}
+
+h6 {
+  @include calc-header(.9375rem, 3rem);
+}
+
+.inline {
+  display: inline-block;
+}

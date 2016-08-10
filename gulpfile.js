@@ -17,5 +17,7 @@ gulp.task('server:run', function () {
         gulp.run('sass:compile');
     });
 
-    gulp.watch("**/*.*").on('change', browserSync.reload);
+    gulp.watch("style/*.*").on('change', browserSync.reload);
+
+    gulp.watch("*.html").on('change', browserSync.reload);
 });

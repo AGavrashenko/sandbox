@@ -2,7 +2,9 @@ html, body { height: 100%; margin: 0; }
 
 *, *:before, *:after { box-sizing: border-box; }
 
-.main-width { width: 80%; margin: 0 auto; }
+html { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; }
+
+.main-width { width: 90%; margin: 0 auto; }
 
 .row { margin-left: -1.5em; margin-right: -1.5em; }
 
@@ -108,6 +110,22 @@ html, body { height: 100%; margin: 0; }
 
 @media (min-width: 1200px) { .col-lg-12 { width: 100%; } }
 
+h1, h2, h3, h4, h5, h6 { padding: 0; margin: 0; }
+
+h1 { height: 4rem; font-size: 1.75rem; font-weight: normal; line-height: 2.75rem; padding-top: 1.0475rem; padding-bottom: 0.2025rem; }
+
+h2 { height: 4rem; font-size: 1.3125rem; font-weight: normal; line-height: 2.3125rem; padding-top: 1.41063rem; padding-bottom: 0.27687rem; }
+
+h3 { height: 4rem; font-size: 1.125rem; font-weight: 600; line-height: 2.125rem; padding-top: 1.56625rem; padding-bottom: 0.30875rem; }
+
+h4 { height: 3rem; font-size: 1.125rem; font-weight: normal; line-height: 2.125rem; padding-top: 0.56625rem; padding-bottom: 0.30875rem; }
+
+h5 { height: 3rem; font-size: 1.2rem; font-weight: 600; line-height: 2.2rem; padding-top: 0.504rem; padding-bottom: 0.296rem; }
+
+h6 { height: 3rem; font-size: 0.9375rem; font-weight: normal; line-height: 1.9375rem; padding-top: 0.72188rem; padding-bottom: 0.34062rem; }
+
+.inline { display: inline-block; }
+
 .radio { display: block; }
 
 .radio.radio_inline { display: inline-block; }
@@ -123,3 +141,5 @@ html, body { height: 100%; margin: 0; }
 .radio .radio__label:before { content: ""; display: inline-block; vertical-align: text-top; width: 1em; height: 1em; margin-right: .25em; border-radius: 50%; background-color: #fff; border: 0.1em solid gray; transition: border .1s; }
 
 .radio:hover .radio__label:before { cursor: pointer; border-color: #5a5a5a; box-shadow: 0 0 0.1em blue; }
+
+.btn { border: 0; border-radius: 2px; background: gray; color: #fff; }
