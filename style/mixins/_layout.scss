@@ -3,7 +3,12 @@
     content: "";
     display: table;
   }
-  &:after{
+  &:after {
     clear: both;
   }
+}
+
+@mixin focus {
+  outline: 1px solid $focus-outline-color;
+  outline-offset: 1px;
 }
