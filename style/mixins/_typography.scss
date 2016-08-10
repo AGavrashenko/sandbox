@@ -10,7 +10,7 @@
   $top: 1;
   $bottom: $baseline-from-bottom - ($line-height - $font-size * $magic) / 2;
 
-  height: $wrap;
+  min-height: $wrap;
   font-size: $font-size;
   line-height: $line-height;
   padding-top: $wrap - $line-height - $bottom;
