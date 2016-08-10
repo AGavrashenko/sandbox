@@ -2,7 +2,7 @@ html, body { height: 100%; margin: 0; }
 
 *, *:before, *:after { box-sizing: border-box; }
 
-html { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; }
+body { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; }
 
 .main-width { width: 90%; margin: 0 auto; }
 
@@ -124,7 +124,7 @@ h5 { height: 3rem; font-size: 1.2rem; font-weight: 600; line-height: 2.2rem; pad
 
 h6 { height: 3rem; font-size: 0.9375rem; font-weight: normal; line-height: 1.9375rem; padding-top: 0.72188rem; padding-bottom: 0.34062rem; }
 
-.inline { display: inline-block; }
+p { padding: 0; margin: 0; padding-top: 1.00002rem; padding-bottom: 1.00002rem; }
 
 .radio { display: block; }
 

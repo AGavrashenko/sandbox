@@ -1,12 +1,18 @@
-$font-size-base: .8125rem;
-$font: Verdana;
-$line-height-base: 1.2308;
+//
+//
+//## Basic
+//
+$font-size: .8125rem;
+$font-family: Verdana;
+$line-height: 1.2308;
 
-$line-height-computed: $font-size-base * $line-height-base;
+$line-height-computed: $font-size * $line-height;
 
-
-// Typography
-// Headings
+//
+//
+//## Typography
+//
+// Headers
 //
 $h1-size: 6rem;
 $h2-size: 4rem;
