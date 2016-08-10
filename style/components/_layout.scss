@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+  font-family: $font;
+  line-height: $line-height-base;
+}
+
+.main-width {
+  width: 90%;
+  margin: 0 auto;
+}

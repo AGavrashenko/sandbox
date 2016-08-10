@@ -1,0 +1,40 @@
+//@mixin create-line($font-size, $line-height, $wrap-height) {
+//  $base-line: ($wrap-height - $font-size) / 2;
+//
+//  $top: $wrap-height - $base-line - $font-size - (($line-height - $font-size) / 2);
+//  $bottom: $wrap-height - $line-height - $top;
+//
+//  font-size: $font-size;
+//  line-height: $line-height;
+//  padding-top: $top;
+//  padding-bottom: $bottom;
+//}
+
+//@mixin create-line($font-size, $line-height, $wrap-height) {
+//  $base-line: ($wrap-height - $font-size) / 2;
+//
+//  $top: $wrap-height - $base-line - $font-size - (($line-height - $font-size) / 2);
+//  $bottom: $wrap-height - $line-height - $top;
+//
+//  font-size: $font-size;
+//  line-height: $line-height;
+//  padding-top: $top;
+//  padding-bottom: $bottom;
+//}
+
+@mixin calc-header($font-size, $wrap, $font-weight: normal) {
+  $line-height: $font-size + 1;
+  $baseline-from-bottom: 1rem;
+
+  $magic: .66;
+
+  $top: 1;
+  $bottom: $baseline-from-bottom - ($line-height - $font-size * $magic) / 2;
+
+  height: $wrap;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  padding-top: $wrap - $line-height - $bottom;
+  padding-bottom: $bottom;
+}

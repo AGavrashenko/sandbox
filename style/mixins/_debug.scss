@@ -1,0 +1,20 @@
+@mixin modular-grid($enable) {
+  @if ($enable) {
+    body {
+      background: linear-gradient(to bottom, transparentize(blue, .5) 0, rgba(255, 255, 255, 0) 1px) repeat-y,
+      linear-gradient(to bottom, transparentize(gray, .9) 0, rgba(255, 255, 255, 0) 1px) repeat-y;
+      background-size: 100% $line-height-computed,
+      100% $line-height-computed * .25;
+    }
+  }
+}
+
+@mixin layer-edge($enable) {
+  @if ($enable) {
+    body .main-width * {
+      outline: 1px solid red;
+      outline-offset: -1px;
+      outline-style: dotted;
+    }
+  }
+}
