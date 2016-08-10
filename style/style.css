@@ -2,7 +2,7 @@ html, body { height: 100%; margin: 0; }
 
 *, *:before, *:after { box-sizing: border-box; }
 
-body { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; }
+body { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; color: #333; }
 
 .main-width { width: 90%; margin: 0 auto; }
 
@@ -124,22 +124,26 @@ h5 { height: 3rem; font-size: 1.2rem; font-weight: 600; line-height: 2.2rem; pad
 
 h6 { height: 3rem; font-size: 0.9375rem; font-weight: normal; line-height: 1.9375rem; padding-top: 0.72188rem; padding-bottom: 0.34062rem; }
 
-p { padding: 0; margin: 0; padding-top: 1.00002rem; padding-bottom: 1.00002rem; }
+p { margin: 0; padding: 0.50001rem 0rem 0.50001rem; }
 
-.radio { display: block; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+fieldset legend { border: 0; margin: 0; padding: 0.75002rem 0rem 0.25001rem; font-size: 1rem; }
+
+.radio { display: block; padding: 0.25001rem 0rem 0.25001rem; }
 
 .radio.radio_inline { display: inline-block; }
 
 .radio input { opacity: 0; width: 0; padding: 0; margin: 0; float: left; }
 
-.radio input:focus ~ .radio__label:before { box-shadow: 0 0 0.1em blue; }
+.radio input:focus ~ .radio__label:before { box-shadow: 0 0 0.1em #3cb6ce; }
 
 .radio input:checked ~ .radio__label:before { border-width: .4em; }
 
-.radio input:disabled ~ .radio__label:before { opacity: .5; cursor: not-allowed; background: #e6e6e6; border-color: gray !important; box-shadow: none !important; }
+.radio input:disabled ~ .radio__label:before { opacity: .5; cursor: not-allowed; background: #cccccc; border-color: #666 !important; box-shadow: none !important; }
 
-.radio .radio__label:before { content: ""; display: inline-block; vertical-align: text-top; width: 1em; height: 1em; margin-right: .25em; border-radius: 50%; background-color: #fff; border: 0.1em solid gray; transition: border .1s; }
+.radio .radio__label:before { content: ""; display: inline-block; vertical-align: text-top; width: 0.93752rem; height: 0.93752rem; margin-right: .25em; border-radius: 50%; background-color: #fff; border: 0.1em solid #666; transition: border .1s; }
 
-.radio:hover .radio__label:before { cursor: pointer; border-color: #5a5a5a; box-shadow: 0 0 0.1em blue; }
+.radio:hover .radio__label:before { cursor: pointer; border-color: #404040; box-shadow: 0 0 0.1em #3cb6ce; }
 
 .btn { border: 0; border-radius: 2px; background: gray; color: #fff; }

@@ -17,12 +17,3 @@
   padding-top: $wrap - $line-height - $bottom;
   padding-bottom: $bottom;
 }
-
-//
-//
-//## Spaces
-//
-@mixin set-space($p-top: $line-height-computed, $m-bottom: $line-height-computed) {
-  padding-top: $p-top;
-  padding-bottom: $m-bottom;
-}

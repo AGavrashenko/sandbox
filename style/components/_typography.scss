@@ -36,7 +36,6 @@ h6 {
 //## Paragraphs
 //
 p {
-  padding: 0;
   margin: 0;
-  @include set-space;
+  padding: space(1, 0, 1);
 }

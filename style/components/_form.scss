@@ -1,8 +1,30 @@
-$border-color: gray;
-$focus-outline-color: blue;
+//
+//
+//## Form structure
+//
+form {
+}
 
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  legend {
+    border: 0;
+    margin: 0;
+    padding: space(1.5, 0, .5);
+    font-size: $h6-size;
+  }
+}
+
+//
+//
+//## Radio/Checkbox
+//
 .radio {
   display: block;
+  padding: space(.5, 0, .5);
 
   &.radio_inline {
     display: inline-block;
@@ -35,8 +57,8 @@ $focus-outline-color: blue;
       content: "";
       display: inline-block;
       vertical-align: text-top;
-      width: 1em;
-      height: 1em;
+      width: $line-height-computed * .9375;
+      height: $line-height-computed * .9375;
       margin-right: .25em;
       border-radius: 50%;
       background-color: #fff;

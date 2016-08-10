@@ -1,0 +1,19 @@
+//
+//
+//## Spacer
+//
+@function space($p1:null, $p2:null, $p3:null, $p4:null) {
+  $spacer: $line-height-computed * .5;
+
+  @if ($p4) {
+    @return $p1*$spacer $p2*$spacer $p3*$spacer $p4*$spacer;
+  } @else if ($p3) {
+    @return $p1*$spacer $p2*$spacer $p3*$spacer;
+  } @else if ($p2) {
+    @return $p1*$spacer $p2*$spacer;
+  } @else if ($p1) {
+    @return $p1*$spacer;
+  } @else {
+    @return 0;
+  }
+}
