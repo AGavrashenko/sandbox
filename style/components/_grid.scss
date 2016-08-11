@@ -1,15 +1,7 @@
-$grid-columns: 12 !default;
-$grid-gutter: 3em !default;
-$grid-breakpoints: (
-        xs: 544px,
-        sm: 768px,
-        md: 992px,
-        lg: 1200px) !default;
+
 
 .row {
   @include row();
-  margin-left: -$grid-gutter / 2;
-  margin-right: -$grid-gutter / 2;
 }
 
 [class^="col-"] {
@@ -17,21 +9,12 @@ $grid-breakpoints: (
   padding: 0 $grid-gutter / 2;
 }
 
-@mixin col($grid-columns, $col-count: 1) {
-  width: 100% /$grid-columns * $col-count;
-}
+@include create-grid($grid-columns, $grid-breakpoints);
 
-@function grid-build($cols, $gutter, $breakpoints) {
-}
 
-@each $breakpoint-key in map-keys($grid-breakpoints) {
-  @for $i from 1 through $grid-columns {
-    @media (min-width: #{map_get($grid-breakpoints, $breakpoint-key)}) {
-      .col-#{$breakpoint-key}-#{$i} {
-        @include col($grid-columns, $i);
-      }
-    }
-  }
-}
+
+
+
+
 
 

@@ -1,7 +1,24 @@
 @mixin row() {
   @include clearfix();
+  margin-left: -$grid-gutter / 2;
+  margin-right: -$grid-gutter / 2;
 }
 
+@mixin col($grid-columns, $col-count: 1) {
+  width: 100% /$grid-columns * $col-count;
+}
+
+@mixin create-grid($grid-columns, $grid-breakpoints) {
+  @each $breakpoint-key in map-keys($grid-breakpoints) {
+    @for $i from 1 through $grid-columns {
+      @media (min-width: #{map_get($grid-breakpoints, $breakpoint-key)}) {
+        .col-#{$breakpoint-key}-#{$i} {
+          @include col($grid-columns, $i);
+        }
+      }
+    }
+  }
+}
 
 
 

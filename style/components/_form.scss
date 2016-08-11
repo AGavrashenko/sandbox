@@ -17,6 +17,14 @@ fieldset {
 
 //
 //
+//## Inputs
+//
+.form-control {
+
+}
+
+//
+//
 //## Radio/Checkbox
 //
 .radio,
@@ -51,7 +59,7 @@ fieldset {
     &:checked {
       & ~ .radio__label:before,
       & ~ .checkbox__label:before {
-        background-color: $gray-mine-shaft;
+        background-color: $check-color;
         background-repeat: no-repeat;
         background-size: contain;
       }
