@@ -112,6 +112,8 @@ body { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; color: #
 
 h1, h2, h3, h4, h5, h6, fieldset legend { font-weight: 600; padding: 0; margin: 0; }
 
+h1.header_inline, h2.header_inline, h3.header_inline, h4.header_inline, h5.header_inline, h6.header_inline, fieldset legend.header_inline { display: inline-block; }
+
 h1 { min-height: 4rem; font-size: 1.75rem; line-height: 2.75rem; padding-top: 1.0475rem; padding-bottom: 0.2025rem; }
 
 h2 { min-height: 4rem; font-size: 1.3125rem; line-height: 2.3125rem; padding-top: 1.41063rem; padding-bottom: 0.27687rem; }
