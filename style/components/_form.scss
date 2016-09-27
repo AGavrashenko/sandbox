@@ -20,6 +20,56 @@ fieldset {
 //## Inputs
 //
 .form-control {
+  display: inline-block;
+
+  .control-label {
+    display: inline-block;
+    height: 2rem;
+    vertical-align: top;
+    padding-top: .5rem;
+  }
+
+  .control-input {
+    font-size: $font-size;
+    background-color: #fff;
+    height: 2rem;
+    margin: 0 0 .5rem 0;
+    padding: 0 .5rem;
+    border: {
+      width: $border-width;
+      style: solid;
+      color: $border-color;
+      radius: $border-radius;
+    }
+
+    &:hover {
+      border-color: darken($border-color, $hover);
+    }
+
+    &:focus {
+      @include focus;
+    }
+  }
+
+  select.control-input {
+    -webkit-appearance: textfield;
+    -moz-appearance: none;
+    appearance: textfield;
+    padding-right: 1.25rem;
+    background: {
+      image: $select-caret;
+      repeat: no-repeat;
+      position: right center;
+      size: 1rem;
+    }
+  }
+
+  textarea.control-input {
+    padding-top: .4375rem;
+    padding-bottom: .4375rem;
+    height: auto;
+    min-height: 2rem;
+  }
 
 }
 
@@ -122,7 +172,7 @@ fieldset {
     width: 1rem;
     height: 1rem;
     margin-bottom: -.1875rem;
-    border: 1px solid $border-color;
+    border: $border-width solid $border-color;
     transition: background-color .1s;
 
     &:after {

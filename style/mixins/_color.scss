@@ -1,0 +1,5 @@
+@function colorBase64($color) {
+  $str-color: inspect($color);
+  @return str-insert(str-slice($str-color, 2), '%23', 1);
+}
+

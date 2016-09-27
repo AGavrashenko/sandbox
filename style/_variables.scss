@@ -1,6 +1,9 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
 //## General
+// Required mixins and functions
+@import "mixins/color";
+//
 // Grid Settings
 //
 $grid-columns: 12 !default;
@@ -19,6 +22,7 @@ $line-height: 1.2308;
 $line-height-computed: $font-size * $line-height;
 
 $border-radius: .125rem;
+$border-width: .0675rem;
 
 // States
 //
@@ -35,12 +39,12 @@ $color-gray-dove: #666 !default;
 $color-gray-dusty: #999 !default;
 $color-gray-concrete: #f2f2f2 !default;
 
-$color-red: #f83200 !default;
-$color-orange: #f86e00 !default;
-$color-yellow: #f1b521 !default;
-$color-green: #89c341 !default;
-$color-teal: #00a79d !default;
-$color-blue: #3cb6ce !default;
+$color-red: #F44336 !default;
+$color-orange: #FF9800 !default;
+$color-yellow: #FFEB3B !default;
+$color-green: #4CAF50 !default;
+$color-teal: #009688 !default;
+$color-blue: #2196F3 !default;
 
 // Color Definitions
 //
@@ -67,14 +71,19 @@ $h6-size: 1rem;
 //## Form
 // Form-controls
 //
+//
+//
+
+//
 // Radios & Checkboxes
 $check-bg: $color-blue;
 $check-bg-disabled: $color-gray-concrete;
 $check-img-color: #fff;
 $check-img-color-disabled: $color-gray-dusty;
 
-$check-img-checkbox: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='" + $check-img-color + "' d='M6.7,1.6L3.1,5.2L1.3,3.5L0.8,4.1l2.3,2.3l4.2-4.2L6.7,1.6z'/%3E%3C/svg%3E");
-$check-img-disabled-checkbox: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='" + $check-img-color-disabled + "' d='M6.7,1.6L3.1,5.2L1.3,3.5L0.8,4.1l2.3,2.3l4.2-4.2L6.7,1.6z'/%3E%3C/svg%3E");
-$check-img-radio: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='" + $check-img-color + "'/%3E%3C/svg%3E");
-$check-img-disabled-radio: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='" + $check-img-color-disabled + "'/%3E%3C/svg%3E");
+$check-img-checkbox: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{colorBase64($check-img-color)}' d='M6.7,1.6L3.1,5.2L1.3,3.5L0.8,4.1l2.3,2.3l4.2-4.2L6.7,1.6z'/%3E%3C/svg%3E");
+$check-img-disabled-checkbox: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{colorBase64($check-img-color-disabled)}' d='M6.7,1.6L3.1,5.2L1.3,3.5L0.8,4.1l2.3,2.3l4.2-4.2L6.7,1.6z'/%3E%3C/svg%3E");
+$check-img-radio: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='#{colorBase64($check-img-color)}'/%3E%3C/svg%3E");
+$check-img-disabled-radio: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='#{colorBase64($check-img-color-disabled)}'/%3E%3C/svg%3E");
 
+$select-caret: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{colorBase64($text-color)}' d='M2.2,2.8l1.9,2.7l1.9-2.7H2.2z'/%3E%3C/svg%3E");
