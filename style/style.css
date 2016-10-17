@@ -140,7 +140,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
 .form-control .control-input:focus { outline: 1px solid #2196F3; outline-offset: 1px; }
 
-.form-control select.control-input { -webkit-appearance: textfield; -moz-appearance: none; appearance: textfield; padding-right: 1.25rem; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23333' d='M2.2,2.8l1.9,2.7l1.9-2.7H2.2z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right center; background-size: 1rem; }
+.form-control select.control-input { -webkit-appearance: textfield; -moz-appearance: none; appearance: textfield; padding-right: 1.25rem; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%208%204%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0l4%2C4l4-4C8%2C0%2C0%2C0%2C0%2C0z%22/%3E%0A%3C/svg%3E"); background-repeat: no-repeat; background-position: calc(100% - 10px) center; background-size: 8px; }
 
 .form-control select.control-input::-ms-expand { display: none; }
 
