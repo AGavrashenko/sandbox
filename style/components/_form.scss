@@ -50,7 +50,6 @@ fieldset {
       @include focus;
     }
   }
-  $select-caret: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%208%204%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0l4%2C4l4-4C8%2C0%2C0%2C0%2C0%2C0z%22/%3E%0A%3C/svg%3E");
 
   select.control-input {
     -webkit-appearance: textfield;

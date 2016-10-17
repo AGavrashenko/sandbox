@@ -86,4 +86,4 @@ $check-img-disabled-checkbox: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=
 $check-img-radio: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='#{colorBase64($check-img-color)}'/%3E%3C/svg%3E");
 $check-img-disabled-radio: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='#{colorBase64($check-img-color-disabled)}'/%3E%3C/svg%3E");
 
-$select-caret: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{colorBase64($text-color)}' d='M2.2,2.8l1.9,2.7l1.9-2.7H2.2z'/%3E%3C/svg%3E");
+$select-caret: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%208%204%22%3E%0A%20%20%20%20%3Cpath%20fill%3D%22%23#{colorBase64($text-color)}%22%20d%3D%22M0%2C0l4%2C4l4-4C8%2C0%2C0%2C0%2C0%2C0z%22/%3E%0A%3C/svg%3E");
