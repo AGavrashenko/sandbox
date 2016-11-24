@@ -121,10 +121,9 @@ fieldset {
   }
 
   .control-input {
+    position: absolute;
     width: 1px;
     height: 1px;
-    margin-left: -5px;
-    float: left;
     opacity: 0;
 
     &:hover {

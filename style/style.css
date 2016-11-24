@@ -160,7 +160,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
 .checkbox .control-input:disabled:checked ~ .control-indicator:after { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23999' d='M6.7,1.6L3.1,5.2L1.3,3.5L0.8,4.1l2.3,2.3l4.2-4.2L6.7,1.6z'/%3E%3C/svg%3E"); }
 
-.radio .control-input, .checkbox .control-input { width: 1px; height: 1px; margin-left: -5px; float: left; opacity: 0; }
+.radio .control-input, .checkbox .control-input { position: absolute; width: 1px; height: 1px; opacity: 0; }
 
 .radio .control-input:hover ~ .control-indicator, .checkbox .control-input:hover ~ .control-indicator { border-color: gray; }
 
