@@ -144,7 +144,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
 .form-control select.control-input::-ms-expand { display: none; }
 
-.form-control textarea.control-input { padding-top: .4375rem; padding-bottom: .4375rem; height: auto; min-height: 2rem; }
+.form-control textarea.control-input { vertical-align: bottom; padding-top: .4375rem; padding-bottom: .4375rem; height: auto; min-height: 2rem; }
 
 .radio, .checkbox { display: inline-block; padding: 0.25001rem 0.50001rem 0.25001rem 0rem; }
 
