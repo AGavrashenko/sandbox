@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+    <style>
+        .small, .medium, .large {
+            display: none;
+        }
+
+        @media screen and (min-width: 0) and (max-width: 300px) {
+            .small {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 301px) and (max-width: 800px) {
+            .medium {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 801px) {
+            .large {
+                display: block;
+            }
+        }
+    </style>
+
+    <g class="large">
+        <path d="M9.5,9.5v61h13v-40h19v40h29v-61H9.5z M55.5,51.5h-7v-9h7V51.5z M55.5,40.5h-7v-10h7V40.5z M63.5,51.5h-6v-9h6V51.5z
+		 M63.5,40.5h-6v-10h6V40.5z"/>
+        <circle cx="25.5" cy="50.5" r="1"/>
+    </g>
+    <g class="medium">
+        <path d="M9.5,9.5v61h13v-40h19v40h29v-61H9.5z M63.5,51.5h-15v-21h15V51.5z"/>
+    </g>
+    <g class="small">
+        <rect x="9.5" y="9.5" width="61" height="61"/>
+    </g>
+</svg>

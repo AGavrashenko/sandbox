@@ -114,17 +114,17 @@ h1, h2, h3, h4, h5, h6, fieldset legend { font-weight: 600; padding: 0; margin: 
 
 h1.header_inline, h2.header_inline, h3.header_inline, h4.header_inline, h5.header_inline, h6.header_inline, fieldset legend.header_inline { display: inline-block; }
 
-h1 { min-height: 4rem; font-size: 1.75rem; line-height: 2.75rem; padding-top: 1.0475rem; padding-bottom: 0.2025rem; }
+h1 { min-height: 4rem; font-size: 1.75rem; line-height: 2.75rem; padding-top: 1.02125rem; padding-bottom: 0.22875rem; }
 
-h2 { min-height: 4rem; font-size: 1.3125rem; line-height: 2.3125rem; padding-top: 1.41063rem; padding-bottom: 0.27687rem; }
+h2 { min-height: 4rem; font-size: 1.5rem; line-height: 2.5rem; padding-top: 1.2325rem; padding-bottom: 0.2675rem; }
 
-h3 { min-height: 4rem; font-size: 1.125rem; line-height: 2.125rem; padding-top: 1.56625rem; padding-bottom: 0.30875rem; }
+h3 { min-height: 4rem; font-size: 1.375rem; line-height: 2.375rem; padding-top: 1.33813rem; padding-bottom: 0.28687rem; }
 
-h4 { min-height: 3rem; font-size: 1.125rem; line-height: 2.125rem; padding-top: 0.56625rem; padding-bottom: 0.30875rem; }
+h4 { min-height: 3rem; font-size: 1.125rem; line-height: 2.125rem; padding-top: 0.54938rem; padding-bottom: 0.32562rem; }
 
-h5 { min-height: 3rem; font-size: 1.2rem; line-height: 2.2rem; padding-top: 0.504rem; padding-bottom: 0.296rem; }
+h5 { min-height: 3rem; font-size: 1rem; line-height: 2rem; padding-top: 0.655rem; padding-bottom: 0.345rem; }
 
-h6, fieldset legend { min-height: 3rem; font-size: 0.9375rem; line-height: 1.9375rem; padding-top: 0.72188rem; padding-bottom: 0.34062rem; }
+h6, fieldset legend { min-height: 3rem; font-size: 0.875rem; line-height: 1.875rem; padding-top: 0.76062rem; padding-bottom: 0.36438rem; }
 
 p { margin: 0; padding: 0.50001rem 0rem 0.50001rem; }
 
