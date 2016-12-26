@@ -1,8 +1,16 @@
-html, body { height: 100%; margin: 0; }
+h1, h3, h5 { font-family: "Lato", sans-serif; font-weight: 700; }
+
+h2, h4, h6, fieldset legend { font-family: "Lato", sans-serif; font-weight: 400; }
+
+html, body { margin: 0; padding: 0; height: 100%; }
+
+h1, h2, h3, h4, h5, h6, fieldset legend { margin: 0; padding: 0; }
+
+html { font-size: 16px; }
 
 *, *:before, *:after { box-sizing: border-box; }
 
-body { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; color: #333; }
+body { font-size: 0.8125rem; font-family: "Lato", sans-serif; line-height: 1.2308; color: #333; }
 
 .main-width { width: 90%; margin: 0 auto; }
 
@@ -110,21 +118,17 @@ body { font-size: 0.8125rem; font-family: Verdana; line-height: 1.2308; color: #
 
 @media (min-width: 1200px) { .col-lg-12 { width: 100%; } }
 
-h1, h2, h3, h4, h5, h6, fieldset legend { font-weight: 600; padding: 0; margin: 0; }
+h6, fieldset legend { line-height: 1.5rem; font-size: 1rem; padding: 1.00002rem 0rem 0.75002rem; }
 
-h1.header_inline, h2.header_inline, h3.header_inline, h4.header_inline, h5.header_inline, h6.header_inline, fieldset legend.header_inline { display: inline-block; }
+h5 { line-height: 1.75rem; font-size: 1.25rem; padding: 1.00002rem 0rem 0.75002rem; }
 
-h1 { min-height: 4rem; font-size: 1.75rem; line-height: 2.75rem; padding-top: 1.02125rem; padding-bottom: 0.22875rem; }
+h4 { line-height: 2rem; font-size: 1.5rem; padding: 1.00002rem 0rem 0.75002rem; }
 
-h2 { min-height: 4rem; font-size: 1.5rem; line-height: 2.5rem; padding-top: 1.2325rem; padding-bottom: 0.2675rem; }
+h3 { line-height: 2.25rem; font-size: 1.75rem; padding: 1.00002rem 0rem 0.75002rem; }
 
-h3 { min-height: 4rem; font-size: 1.375rem; line-height: 2.375rem; padding-top: 1.33813rem; padding-bottom: 0.28687rem; }
+h2 { line-height: 2.5rem; font-size: 2rem; padding: 1.00002rem 0rem 0.75002rem; }
 
-h4 { min-height: 3rem; font-size: 1.125rem; line-height: 2.125rem; padding-top: 0.54938rem; padding-bottom: 0.32562rem; }
-
-h5 { min-height: 3rem; font-size: 1rem; line-height: 2rem; padding-top: 0.655rem; padding-bottom: 0.345rem; }
-
-h6, fieldset legend { min-height: 3rem; font-size: 0.875rem; line-height: 1.875rem; padding-top: 0.76062rem; padding-bottom: 0.36438rem; }
+h1 { line-height: 2.75rem; font-size: 2.25rem; padding: 1.00002rem 0rem 0.75002rem; }
 
 p { margin: 0; padding: 0.50001rem 0rem 0.50001rem; }
 

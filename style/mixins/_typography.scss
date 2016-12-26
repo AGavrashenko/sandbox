@@ -1,18 +1,12 @@
 //
 //## Headers
 //
-@mixin calc-header($font-size, $wrap) {
-  $line-height: $font-size + 1;
-  $baseline-from-bottom: 1rem;
-
-  $magic: .69;
-
-  $top: 1;
-  $bottom: $baseline-from-bottom - ($line-height - $font-size * $magic) / 2;
-
-  min-height: $wrap;
-  font-size: $font-size;
-  line-height: $line-height;
-  padding-top: $wrap - $line-height - $bottom;
-  padding-bottom: $bottom;
+@mixin headers($initial-size: 1rem, $step: .25rem, $space: (2, 0, 1)) {
+  @for $i from 6 through 1 {
+    h#{$i} {
+      line-height: $initial-size + $step * (6 - $i) + $step * 2;
+      font-size: $initial-size + $step*(6 - $i);
+      padding: space($space...);
+    }
+  }
 }

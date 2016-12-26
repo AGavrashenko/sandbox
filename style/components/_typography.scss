@@ -2,38 +2,14 @@
 //
 //## Headings
 //
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
+@include headers($h-initial-size, $h-size-step, $h-space);
 
-  &.header_inline {
-    display: inline-block;
-  }
+h1, h3, h5 {
+  @extend %h-main;
 }
 
-h1 {
-  @include calc-header($font-size: 1.75rem, $wrap: 4rem);
-}
-
-h2 {
-  @include calc-header(1.5rem, 4rem);
-}
-
-h3 {
-  @include calc-header(1.375rem, 4rem);
-}
-
-h4 {
-  @include calc-header(1.125rem, 3rem);
-}
-
-h5 {
-  @include calc-header(1rem, 3rem);
-}
-
-h6 {
-  @include calc-header(.875rem, 3rem);
+h2, h4, h6 {
+  @extend %h-secondary;
 }
 
 //

@@ -12,9 +12,15 @@
 @import "mixins/typography";
 //
 //
+//## Core
+//
+@import "core/reset";
+@import "core/layout";
+@import "core/grid";
+//
+//
 //## Components
-@import "components/layout";
-@import "components/grid";
+//
 @import "components/typography";
 @import "components/form";
 @import "components/button";
